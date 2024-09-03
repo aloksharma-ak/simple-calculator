@@ -1,0 +1,37 @@
+.displayBox {
+    width: 100%;
+    min-height: 14vh;
+    background-color: #c1ccc1;
+    border-radius: 10px;
+    padding: 5px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow: hidden;
+    /* Adjusted to prevent the entire box from scrolling */
+}
+
+.displayText {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: right;
+    opacity: .7;
+    max-height: 7vh;
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    width: 100%;
+    -ms-overflow-style: none;
+    /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none;
+}
+
+.displayText::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar in WebKit-based browsers (Chrome, Safari, etc.) */
+}
+
+.displayResult {
+    font-weight: 700;
+    font-size: 22px;
+}

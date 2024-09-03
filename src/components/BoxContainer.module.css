@@ -1,0 +1,8 @@
+.boxContainer {
+    max-width: 300px;
+    background-color: #00877978;
+    /* filter: blur(1px); */
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(21, 203, 118, 0.5) 0px 0px 0px 1px inset;
+    padding: 15px;
+}

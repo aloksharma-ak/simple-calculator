@@ -1,0 +1,40 @@
+.button {
+    height: 55px;
+    width: 55px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.button:is(:nth-child(8), :nth-child(16)) {
+    position: relative;
+}
+
+.button:nth-child(16)::after {
+    content: "=";
+    height: 125px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.button:nth-child(17) {
+    width: 125px;
+}
+
+.button:is(:hover, :active) {
+    font-weight: 700;
+}
+
+.button:active {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3),
+        inset -2px -2px 5px rgba(195, 165, 165, 0.438);
+
+    transition: box-shadow 0.3s ease;
+}
